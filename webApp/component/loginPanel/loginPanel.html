@@ -1,0 +1,16 @@
+<aside class="log-in" [style.display]="display">
+  <div>
+    <h1>用户登录</h1>
+    <select [(ngModel)]="role">
+      <option value="admin">管理员</option>
+      <option value="op">操作员</option>
+    </select>
+    <!-- <input type="text" name="username" placeholder="用户名" [(ngModel)]="username"> -->
+    <input type="password" name="password" placeholder="密码" [(ngModel)]="password" (keyup)="loginin($event)">
+    <!-- 错误提示 -->
+    <p class="error-msg">{{errorMsg}}</p>
+    <button type="button" (click)="userlogin()">登录</button>
+    <!-- 关闭图标按钮 -->
+    <!-- <span class="icon icon-close" (click)="hiddenLoginPanel()"></span> -->
+  </div>
+</aside>

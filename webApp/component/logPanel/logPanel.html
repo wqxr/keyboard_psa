@@ -1,0 +1,16 @@
+<div  class="dia-con" >
+    <span class="close" (click)="onclose()">X</span>
+    <header>
+        <h1>日志面板</h1>
+    </header>
+    
+    <section class="log-panel" >
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let rowItem of rowArray">
+                    <td *ngFor="let tdItem of rowItem">{{tdItem}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </div>

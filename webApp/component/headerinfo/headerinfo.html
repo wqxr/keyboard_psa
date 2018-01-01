@@ -1,0 +1,126 @@
+<header class="header">
+    
+                <h1 class="title">
+                    设备名称及软件名称：FMUK PSA Attach/FMUK Attach
+                </h1>
+    
+                <div class="nav">
+                    <div class="logo"></div>
+                    <ul class="controls">
+                        <li class="control-item">
+                            <span class=" icon icon-home active"></span>
+                        </li>
+                        <li class="control-item">
+                            <span class="icon icon-file2"></span>
+                        </li>
+                        <li class="control-item">
+                            <span class="icon icon-setting"> </span>
+                        </li>
+                        <li class="control-item">
+                            <span class="icon icon-start"> </span>
+                        </li>
+                        <li class="control-item">
+                            <span class="icon icon-refesh"></span>
+                        </li>
+                        <li class="control-item">
+                            <span class="icon icon-hold-on"></span>
+                        </li>
+                        <li class="control-item">
+                            <span class="icon icon-stop3"></span>
+                        </li>
+                        <li class="control-item">
+                            <span class="icon icon-users"></span>
+                        </li>
+                    </ul>
+                </div>
+    
+            </header>
+
+    <!-- <div class="control-bar">
+        <h1></h1>
+        <span></span>
+        <ul>
+           
+            <li (click)="fullScreen()">全屏</li>
+            <li (click)="openpointPanel()">点位面板</li>
+            <li (click)="openLogPanel()">日志面板</li>
+            <li (click)="showConfig()">{{configshowtext}}</li>
+            <li (click)="showIo()">{{ioisshowText}}</li>
+            <li (click)="loginin()" [ngClass]="{'active':styleclass[2]}">{{userinformation.role}}
+                <span class="icon icon-down"></span>
+                <ul>
+                    <li (click)="logout()">退出登录</li>
+                    <li  *ngIf="userinformation.role==='管理员'" (click)="changePwd()">修改密码</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class='box'>
+
+        <div class="control">
+            <ul>
+                <!-- //active 是点击后的样式 -->
+                <!-- <li (click)="startUp()" [ngClass]="{'active':startclass==true}">
+                    启动
+                </li>
+
+                <li (click)="reset()" [ngClass]="{'active':resetclass==true}">
+                    复位
+                </li>
+                <li (click)="suspend()" [ngClass]="{'active':suspendclass==true}">
+                    暂停
+                </li> -->
+                <!-- <li (click)="emergencyStop()" [ngClass]="{'active':emergencyclass==true}">
+                    急停
+                </li> -->
+            <!-- </ul>
+            <p class="system-status">
+                {{status}}
+            </p>
+        </div>
+
+
+
+
+
+        <ul class="main-message">
+            <li class="tips">
+                <div class="ct">
+                    成品数量
+                    <p>{{headerinfo.totalnumber}}</p>
+                </div>
+                <div class="bad">
+                  CT
+                    <p>{{headerinfo.CT}}s</p>
+                </div>
+            </li>
+            <li class="assme-detil">
+                <ul>
+                    <li>
+                        <span class="name">良品数</span>
+                        <span class="value">{{headerinfo.goodnumber}}</span>
+                        
+                    </li>
+                    <li>
+                        <span class="name">不良数</span>
+                        <span class="value">{{headerinfo.badnumber}}</span>
+                    </li>
+                    <li>
+                        <span class="name">良率</span>
+                        <span class="value">{{headerinfo.goodnumber/headerinfo.totalnumber}}</span>
+                    </li>
+                    <li>
+                        <span class="name">贴合时间</span>
+                        <span class="value">{{headerinfo.Acycletime}}</span>
+                    </li>
+                  
+                </ul>
+            </li>
+
+        </ul>
+        <div class="log">
+            <ul id="js_logDiv">
+                <li *ngFor="let log of logs ">{{log.time|date:'yyyy-MM-dd HH:mm:ss'}},{{log.loginfo}}</li>
+            </ul>
+        </div>
+    </div>  -->

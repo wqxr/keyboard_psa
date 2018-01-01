@@ -1,0 +1,41 @@
+<div class="dia-con">
+    <span class="close" (click)="onclose()">X</span>
+    <header>
+      <h1>配置参数</h1>
+    </header>
+    <section>
+        <div class="from">
+            <label>
+                  <span>Header</span>  <input id="src" type="text" name="" value="" placeholder="" [(ngModel)]="config.Ip"/>
+            </label>
+            <label>
+                  <span>Station</span>  <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.Station"/>
+            </label>
+            <label>
+                  <span>StationID</span>    <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.StationID"/>
+            </label>
+            <label>
+                  <span>StationNo</span>    <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.StationNo"/>
+            </label>
+            <label>
+                  <span>MAC_ADDR</span>  <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.MAC_ADDR"/>
+            </label>
+            <label>
+                  <span>Line</span>  <input id="sn" type="text" name="" value="" placeholder="" [(ngModel)]="config.line"/>
+            </label>
+            <div class="save-path">
+                  <span>保存路径</span>
+                  <p>{{config.savePath}}</p>
+                </div>
+            </div>
+              </section>
+              <footer>
+                  <button type="button" class="btn btn-cancel" (click)="cancel()">取消</button>
+                  <button type="button" class="btn btn-ok" (click)="saveConfig()">保存</button>
+                </footer>
+       
+   
+      
+               
+        </div>
+    
