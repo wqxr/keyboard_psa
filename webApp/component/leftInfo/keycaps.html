@@ -2,12 +2,12 @@
 <div class="left">
     <div class="status">
         <div class="con">
-            <span class="txt"> 贴合结果 </span> OK
+            <span class="txt"> 贴合结果 </span>{{successinfo}}
         </div>
     </div>
     <div class="control-recoed">
-        <ul class="list">
-            <li>dasd </li>
+        <ul class="list" id="js_logDiv">
+            <li  *ngFor="let log of logs ">{{log.time|date:'yyyy-MM-dd HH:mm:ss'}},{{log.loginfo}} </li>
         </ul>
     </div>
 </div>
@@ -22,7 +22,7 @@
         <span class="name">
             SN
         </span>
-        <input type="text" name="" id="" value="123456789">
+        <input type="text" name="" id=""  [(ngModel)]="headerinfo.SN">
     </div>
 </div>
 <div class="right">
@@ -61,28 +61,30 @@
     </ul>
     <ul class="detial">
         <li>
-            <span class="num">50</span>
+            <span class="num">{{headerinfo.totalnumber}}</span>
             <span class="del">成品数量</span>
         </li>
         <li>
-            <span class="num">28</span>
+            <span class="num">{{headerinfo.goodnumber}}</span>
             <span class="del">良品数</span>
         </li>
         <li>
-            <span class="num">4</span>
+            <span class="num">{{headerinfo.badnumber}}</span>
             <span class="del">不良数</span>
         </li>
         <li>
-            <span class="num">89%</span>
+            <span class="num">{{headerinfo.goodnumber/headerinfo.totalnumber}}</span>
             <span class="del">良品率</span>
         </li>
         <li>
-            <span class="num">16h</span>
+            <span class="num">{{headerinfo.CT}}s</span>
             <span class="del">CT</span>
         </li>
 
     </ul>
-    <div class="charts"></div>
+    <div class="charts">
+
+    </div>
     <div class="up-button">
         SFIS 上传OK
     </div>

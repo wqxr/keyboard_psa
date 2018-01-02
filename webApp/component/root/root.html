@@ -1,10 +1,9 @@
 <article class="main">
-    <headinfo></headinfo>
+    <headinfo  [headerinfo]="headerinfo"     [logs]="logs" [configinfomation]="configinfo"  [userinformation]="loginStatus" [goodnumber]="goodtotal" [CTendtime]="ctendtime" [failnumber]="failtotal" ></headinfo>
 
-   
-        <leftInfo></leftInfo>
+        <leftInfo  [protime]="protimenumber" [headerinfo]="headerinfo" [successinfo]="successinfo"  [logs]="logs"></leftInfo>
     
-    <footerinfo></footerinfo>
+    <footerinfo [assembling]="assembling" [configinfos]="configinfo"></footerinfo>
 </article>
 
 <!-- <article>

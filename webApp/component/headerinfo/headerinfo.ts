@@ -89,6 +89,9 @@ export class HeaderinfoComponent {
               "code":0
       })
   }
+  stop(){
+
+  }
   
   reset(){
     this.startclass=false;

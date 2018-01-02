@@ -9,6 +9,7 @@ const path = nodeRequire('path');
 const fs = nodeRequire('fs');
 const iconv = nodeRequire('iconv-lite');
 
+
 @Component({
   selector: 'log-panel',
   templateUrl: "./webApp/component/logPanel/logPanel.html",

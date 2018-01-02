@@ -12,50 +12,26 @@
             <thead>
                 <tr>
                     <th>SN</th>
-                    <th>type</th>
-                    <th>j-bnumber</th>
-                    <th>设备id</th>
-                    <th>时间</th>
                     <th>贴合精度</th>
                     <th>复检信息</th>
+                    <th>对位次数</th>
+                    <th>保压时间(ms)</th>
+                    <th>设备id</th>
+                    <th>工单号</th>
+                    <th>时间</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>123124124</td>
-                    <td>A</td>
-                    <td>12</td>
-                    <td>vwd123</td>
-                    <td>12:12</td>
-                    <td>123</td>
-                    <td>415646</td>
-                </tr>
-                <tr>
-                    <td>123124124</td>
-                    <td>A</td>
-                    <td>12</td>
-                    <td>vwd123</td>
-                    <td>12:12</td>
-                    <td>123</td>
-                    <td>415646</td>
-                </tr>
-                <tr>
-                    <td>123124124</td>
-                    <td>A</td>
-                    <td>12</td>
-                    <td>vwd123</td>
-                    <td>12:12</td>
-                    <td>123</td>
-                    <td>415646</td>
-                </tr>
-                <tr>
-                    <td>123124124</td>
-                    <td>A</td>
-                    <td>12</td>
-                    <td>vwd123</td>
-                    <td>12:12</td>
-                    <td>123</td>
-                    <td>415646</td>
+                <tr *ngFor="let item of assembling.detailproduct;">
+                    <td>{{item.SN}}</td>
+                    <td>{{item.precision}}</td>
+                    <td>{{item.checkinfo}}</td>
+                    <td>{{item.matchtimes}}</td>
+                    <td>{{item.presstime}}</td>     
+                    <td>sgfdgdfg</td>
+                    <td>{{item.jobNumber}}</td>
+                    <td>{{item.time}}</td>
+                    
                 </tr>
             </tbody>
         </table>

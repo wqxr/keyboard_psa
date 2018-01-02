@@ -1,2 +1,2 @@
 declare function nodeRequire(nodeName: string): any;
-//declare let __dirname:string;
+declare let __dirname:string;

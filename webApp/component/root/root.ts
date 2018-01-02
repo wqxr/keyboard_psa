@@ -278,7 +278,7 @@ export class AppComponent {
             time: Date.now(), loginfo: response.data.log
           });
           setTimeout(() => {
-            document.getElementById('js_logDiv').scrollTop = document.getElementById('js_logDiv').scrollHeight;
+            document.getElementById('').scrollTop = document.getElementById('js_logDiv').scrollHeight;
           }, 0);
         }
         if (undefined !== response.data.error) {//中间件发送来的异常信息
